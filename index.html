@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="stillap.css">
+  <title>Kártyák</title>
+</head>
+<script>
+    window.onload = function() {
+      var modal = document.getElementById("myModal");
+      var span = document.getElementsByClassName("close")[0];
+  
+      modal.style.display = "block";
+      span.onclick = function() {
+        modal.style.display = "none";
+      }
+      window.onclick = function(event) {
+        if (event.target == modal) {
+          modal.style.display = "none";
+        }
+      }
+    };
+  </script>
+  
+<body>
+<div id="myModal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <img src="kepek/profil.jpg" alt="Profilkép" class="profil-img">
+      <h2>Bemutatkozás</h2>
+      <p>Üdvözöllek! Szakmai háttérrel rendelkezem a webfejlesztés és design területén. Több éves tapasztalatom van front-end technológiákban, valamint UX/UI tervezésben. Szeretek új dolgokat tanulni és kreatív projekteken dolgozni.</p>
+      <a href="https://www.canva.com/design/DAFSnUo1Il8/PKDwks27FBY2hwCbLzUfEQ/view?utm_content=DAFSnUo1Il8&utm_campaign=designshare&utm_medium=link&utm_source=editor" class="cv-button" target="_blank">CV megtekintése</a>
+    </div>
+  </div>
+  
+  <h1 class="cim">Kártyák</h1>
+  <ul>
+    <li>
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="kepek/kuldetes.png" alt="Évvégi összegzés" class="avatar-img">
+            <p>Küldetés projekt</p>
+          </div>
+          <div class="flip-card-back">
+            <ul class="kartyalinkek">
+              <li><a href="https://docs.google.com/spreadsheets/d/1zX4uc0bmtZXYc7rBaB9ety7-A3cmwSmsEcuEVoTjSp4/edit?usp=sharing" target="_blank">Küldetés projekt</a></li>
+              <p>Alkalmazás, mely játékosított formában motiválja a résztvevőket (badge-k szerzésével, kötelező feladatok elvégzésével)
+            </p>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </li>
+    <li>
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="kepek/projekt2.png" alt="Google Sites" class="avatar-img">
+            <p>Elégedettségi kérdőív</p>
+          </div>
+          <div class="flip-card-back">
+            <ul class="kartyalinkek">
+              <li><a href="https://jozsef323231.github.io/elegedettsegi" target="_blank">Elégedettségi</a></li>
+              <p>Grafikus felületű visszajelzőrendszer. A kitöltők számát és a kérdésenkénti válaszokat grafikonon megjeleníti.</p>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </li>
+    <li>
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="kepek/gsites.png" alt="LinkedIn" class="avatar-img">
+            <p>Google sites</p>
+          </div>
+          <div class="flip-card-back">
+            <ul class="kartyalinkek">
+              <li><a href="https://sites.google.com/view/konczweblap/f%C5%91oldal" target="_blank">Weboldal</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </li>
+  </ul>
+</body>
+</html>
